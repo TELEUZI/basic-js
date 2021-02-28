@@ -5,6 +5,6 @@ module.exports = function repeater(str, options) {
         .fill(
             String(str).concat(new Array(options.additionRepeatTimes)
                 .fill(options.addition !== undefined ? String(options.addition) : '')
-                .join(options.additionSeparator || ''))
+                .join(options.additionSeparator || '|'))
         ).join(options.separator || '+');
 };

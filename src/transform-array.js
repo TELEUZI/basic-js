@@ -14,7 +14,7 @@ module.exports = function transform(array) {
             } else if (Narray[index] == '--double-next') {
                 Narray[index] = Narray[index + 1];
             } else if (Narray[index] == '--double-prev') {
-                Narray[index] = Narray[index - 1]
+                Narray[index] = Narray[index - 1];
             }
         }
     }

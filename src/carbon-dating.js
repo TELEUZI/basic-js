@@ -7,7 +7,7 @@ const dateSample = (sampleActivity) => isAdequatValue(sampleActivity) ?
 
 const calcRateConstant = () => 0.693 / HALF_LIFE_PERIOD;
 
-const isAdequatValue = (activityRate) => typeof(activityRate) === typeof(String) && parseFloat(activityRate) > 0 && parseFloat(activityRate) < MODERN_ACTIVITY;
+const isAdequatValue = (activityRate) => typeof(activityRate) === 'string' && parseFloat(activityRate) > 0 && parseFloat(activityRate) < MODERN_ACTIVITY;
 
 const calcActivityRatio = (modernActivity, sampleActivity) => Math.log(modernActivity / sampleActivity);
 
